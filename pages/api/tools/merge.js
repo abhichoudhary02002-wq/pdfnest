@@ -2,7 +2,7 @@ import { PDFDocument } from 'pdf-lib';
 import fs from 'fs';
 import dbConnect from '../../../lib/dbConnect';
 import FileRecord from '../../../models/FileRecord';
-import { parseForm, config } from '../_utils/parseForm';
+import { parseForm } from '../_utils/parseForm';
 export const config = { api: { bodyParser: false } };
 
 export default async function handler(req, res) {
